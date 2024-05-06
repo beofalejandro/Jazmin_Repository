@@ -1,0 +1,123 @@
+:root {
+  --jazmin-container: rgba(211, 83, 179, 0.493);
+  --jazmin-border: 1px solid rgb(141, 1, 106);
+  --jazmin-background: rgba(230, 229, 229, 0.466);
+  --jazmin-color: #fff;
+}
+
+.title {
+  height: 600px;
+  text-align: center;
+  align-content: center;
+  background-image: linear-gradient(130deg, #000000d8 40%, #0000002a 100%),
+    url(../library/backgorund.jpg);
+  color: var(--jazmin-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  background-color: var(--jazmin-background);
+}
+
+section {
+  margin: 3%;
+}
+
+figure {
+  align-content: center;
+}
+
+.sub-subtitle {
+  padding: 40px 0;
+  font-size: 20px;
+  text-align: center;
+  background: linear-gradient(120deg, #992bff, rgb(255, 59, 140));
+  background-size: 600px 100px;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.objective {
+  display: flex;
+  gap: 20px;
+  padding: 1%;
+  border-radius: 10px;
+  border: var(--jazmin-border);
+}
+
+.section_2 {
+  display: flex;
+  gap: 20px;
+}
+
+.section_2 > div {
+  padding: 2%;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--jazmin-container);
+  border: var(--jazmin-border);
+}
+
+.section_3 > div {
+  width: 33%;
+  text-align: center;
+}
+
+@keyframes w_multicolor {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  section {
+    margin: 30px 14%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    margin: 3% 1%;
+    text-align: center;
+  }
+
+  .section_2 > div {
+    margin: 2% 0;
+  }
+
+  .section_3 > div {
+    margin: 2% 0;
+  }
+
+  .objective {
+    display: block;
+  }
+
+  .section_2 {
+    display: block;
+  }
+
+  .section_2 > div {
+    width: 100%;
+  }
+
+  .section_3 {
+    display: block;
+  }
+
+  .section_3 > div {
+    width: 100%;
+  }
+}
